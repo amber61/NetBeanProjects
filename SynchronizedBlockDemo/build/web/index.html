@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+File: index.html
+Date: 2015
+Author: Phillip Bridgham (2004).
+Modified By: Stanley Pieda
+Modified to update for HTML5: iframes in HTML5 use pixels for height, not %
+
+References:
+Phillip Bridgham. (2004). Write thread-safe servlets: Learn how to handle thread safety. Retrieved from
+http://www.javaworld.com/article/2072798/java-web-development/write-thread-safe-servlets.html
+
+-->
+<html>
+    <head>
+        <title>Servlet Thread-Safety Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table>
+      <tr>
+        <td>
+          <iframe src="/SynchronizedBlockDemo/SimpleServlet" 
+                  name="servlet1"
+                  height="200"> <!-- HTML 5 uses pixels -->
+          </iframe>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <iframe src="/SynchronizedBlockDemo/SimpleServlet" 
+                  name="servlet2" 
+                  height="200">
+          </iframe>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <iframe src="/SynchronizedBlockDemo/SimpleServlet" 
+                  name="servlet3" 
+                  height="200">
+          </iframe>
+        </td>
+      </tr>
+    </table>
+    </body>
+</html>
